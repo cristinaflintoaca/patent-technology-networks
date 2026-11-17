@@ -4,8 +4,6 @@ Which countries are really alike in what they invent and which similarities only
 
 In this project I used the patents published by the European Patent Office (EPO) in 2023 to build a network of countries and technologies. I then used a statistical null model to keep only the links between countries that are stronger than chance.
 
-<p align="center"><img src="reports/figures/naive_vs_bicm.png" width="90%" alt="Naive country network vs BiCM-validated country network"></p>
-
 ## The approach
 
 - I started from about 98k patent records and their technology codes (IPC). Each code was shortened to its main group (for example `G01R33/561` becomes `G01R33`) and each patent was assigned to the country of its first applicant.
@@ -35,8 +33,6 @@ The validated network splits into four groups of countries (modularity Q = 0.37)
 | Pharma & tech bridge | AE, BM, GR, HU, IE, MT | medicines, surgical instruments, machine learning |
 | Construction materials | BG, LI | cement and building materials, building construction |
 
-<p align="center"><img src="reports/figures/communities.png" width="70%" alt="Communities in the validated country network"></p>
-
 ## Main take-aways
 
 - The naive network is almost complete: 94% of all possible country pairs are linked, so it shows almost no structure.
@@ -56,7 +52,6 @@ The validated network splits into four groups of countries (modularity Q = 0.37)
 
 ```text
 notebooks/patent_network_analysis.ipynb   the full analysis
-reports/figures/                          figures used in this README
 data/README.md                            where the data comes from
 ```
 
